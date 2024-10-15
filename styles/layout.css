@@ -1,0 +1,95 @@
+@import url('./globals.css');
+
+body {
+  background-image: url('/assets/bg-1.png');
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 35rem;
+  height: 35rem;
+  background: var(--bg-color-white);
+
+  border-radius: 3%;
+  box-shadow: var(--box-shadow);
+}
+
+.container .hero {
+  text-align: center;
+  padding: 0 0 1.2rem 0;
+}
+
+.container .hero a {
+  color: var(--grey-333)
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 12px 0;
+  width: 20rem;
+}
+
+.divider span {
+  white-space: nowrap;
+  margin: 0 10px;
+  font-size: 14px;
+  color: var(--grey-666);
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background: var(--light-grey);
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 20em;
+  height: auto;
+
+  gap: 20px;
+}
+
+.email-group label,
+.password-group label {
+  display: block;
+  padding: 0 0 .5em 0;
+  font-size: .8em;
+  color: var(--grey-666);
+}
+
+.password-group .password-wrapper {
+  display: flex;
+  gap: .2em;
+}
+
+.password-wrapper {
+  margin-bottom: 5px;
+}
+
+.password-group .forgot-pass {
+  font-size: .8em;
+  color: var(--grey-333);
+  margin: 5px 0 0 0;
+}

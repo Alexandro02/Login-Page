@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/master_styles.css">
+  <script src="https://kit.fontawesome.com/208e1973a1.js" crossorigin="anonymous"></script>
+  <title>Modern login | Practice HTML & CSS</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Log in</h1>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </section>
+
+    <section class="login-options">
+      <button class="login-facebook">
+        <i class="fa-brands fa-facebook"></i> Log in with Facebook
+      </button>
+      <button class="login-google">
+        <i class="fa-brands fa-google"></i> Log in with Google
+      </button>
+    </section>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <section class="login-form">
+      <div class="input-group email-group">
+        <label for="email">Your email</label>
+        <input type="email" id="email">
+      </div>
+
+      <div class="input-group password-group">
+        <label for="password">Your password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password">
+          <button id="hidePassword" onclick="showPassword()" class="toggle-password">Hide</button>
+        </div>
+
+        <a href="#" class="forgot-pass">Forgot your password</a>
+      </div>
+
+      <button class="log-in-btn" type="submit">Log in</button>
+    </section>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

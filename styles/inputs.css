@@ -1,0 +1,19 @@
+.email-group input,
+.password-group input {
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.email-group input {
+  width: 94.5%;
+}
+
+.password-group input {
+  width: 100%;
+}
+
+.email-group input::placeholder,
+.password-group input::placeholder {
+  color: var(--grey-333);
+}

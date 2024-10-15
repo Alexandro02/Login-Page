@@ -1,0 +1,62 @@
+@import url('./globals.css');
+
+.login-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-options button:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.login-options button:nth-child(2) {
+  margin-top: 10px;
+}
+
+.login-options button {
+  width: 24.5em;
+  padding: 10px;
+
+  border: 1px solid var(--soft-black);
+  border-radius: 40px;
+  background: var(--bg-color-white);
+  transition: .2s ease-in;
+}
+
+.login-options button:hover {
+  background: var(--grey-333);
+  color: var(--light-grey);
+}
+
+
+.password-wrapper button {
+  margin: 0 0 0 .2em;
+  padding: 0 1.2em 0 1.4em;
+
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  background: var(--bg-color-white);
+  transition: .2s ease-in;
+}
+
+.password-wrapper button:hover {
+  background: var(--grey-333);
+  color: var(--light-grey);
+}
+
+.log-in-btn {
+  padding: 12px;
+  border-radius: 40px;
+  border: none;
+  background: var(--grey-666);
+  color: var(--light-grey);
+
+  transition: .2s ease-in;
+}
+
+.login-form button:hover {
+  background: var(--light-grey);
+  color: var(--grey-666);
+}
